@@ -1,0 +1,28 @@
+#img3{
+    width:70%
+  }
+
+#hrtag{
+    width:100%;
+    border:1px solid #da2e33
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #img3{
+      width:95%
+    }
+    #hrtag{
+        width:95%;
+      }
+  }
+  
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+    #img3{
+        width:95%
+      }
+      #hrtag{
+          width:95%;
+        }
+  }

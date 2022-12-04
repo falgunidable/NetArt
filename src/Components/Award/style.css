@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600;900&display=swap');
+
+*{
+  font-family: 'Roboto Slab', serif;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .flex-item-left {
+    padding: 10px;
+    flex: 50%;
+  }
+  
+  .flex-item-right {
+    padding: 10px;
+    flex: 50%;
+    text-align:left;
+  }
+
+  p{
+    font-size:12.5px;
+  }
+  #img1{
+    width:370px
+  }
+  #img2{
+    width:900px
+  }
+  
+  /* Responsive layout - makes a one column-layout instead of two-column layout */
+  @media (max-width: 800px) {
+    .flex-container {
+      flex-direction: column;
+    }
+  }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  #img1{
+    width:50%
+  }
+  #img2{
+    width: 100%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  #img1{
+    width:50%
+  }
+  #img2{
+    width:100%
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  #img1{
+    width:80%
+  }
+  #img2{
+    width:100%
+  }
+  .flex-item-left {
+    flex: 40%;
+  }
+  
+  .flex-item-right {
+    flex: 60%;
+  }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #img1{
+    width:70%
+  }
+  #img2{
+    width:100%
+  }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  #img1{
+    width:75%
+  }
+  #img2{
+    width:100%
+  }
+}
